@@ -1,0 +1,534 @@
+/* Body & Overall Layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #eae8e1;
+    color: #333;
+    line-height: 1.4;                       
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #800000, #1e3a5f); 
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+    animation: slideInFromTop 1s ease-out;
+    animation: slideInTop 0.8s ease-out;
+}
+
+header img{
+    max-width: 180px;
+    border-radius: 2px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/bg2.jpg') no-repeat center/cover;
+    height: 450px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 20px;
+}
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #011835; 
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #1b3352; 
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #270a15;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #800000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero button:hover {
+    background-color: #660000;
+    transform: scale(1.05);
+}
+
+/* Section Styling (Shared for About, Achievements, Location, Contact) */
+.section {
+    padding: 40px 30px;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 250px;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(72, 146, 255, 0.5); 
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #800000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section p {
+    font-size: 16px;
+    color: #1e3a5f;
+    margin-bottom: 30px;
+}
+
+/* About Us Section */
+#about .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    animation: fadeIn 1s ease-out;
+}
+
+#about .about-text {
+    flex: 1;
+    text-align: left;
+    color: #1e3a5f; 
+}
+
+#about .about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#about .about-image {
+    flex: 1;
+    text-align: right;
+}
+
+#about .about-image img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+    background-color: #001f54;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+    #about .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about .about-image {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .section {
+        width: 95%;
+        padding: 30px 20px;
+    }
+}
+/* Achievements Section */
+#achievements .achievements-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    animation: fadeIn 1s ease-out;
+}
+
+#achievements .achievements-text {
+    flex: 1;
+    text-align: left;
+    color: #1e3a5f;
+}
+
+#achievements .achievements-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#achievements .achievements-text li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#achievements .achievements-image {
+    flex: 1;
+    text-align: left; /* Make sure the image is aligned to the left */
+}
+
+#achievements .achievements-image img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* General Section Styling */
+.section {
+    padding: 40px 30px;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 250px;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(72, 146, 255, 0.5);
+}
+
+/* Career Cards Styling */
+.career-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.career-card {
+    width: 280px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.career-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.career-card h3 {
+    font-size: 20px;
+    color: #1e3a5f;
+    margin-bottom: 10px;
+}
+
+.career-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.career-card button {
+    padding: 10px 15px;
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.career-card button:hover {
+    background-color: #660000;
+    transform: scale(1.05);
+}
+/* General Section Styling */
+.section {
+    padding: 40px 30px;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.section:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(102, 7, 7, 0.5);
+    background: linear-gradient(135deg, #fff, #fdf5e6);
+}
+
+/* Salary Table Styling */
+.salary-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.salary-table th, .salary-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.salary-table th {
+    background-color: #800000;
+    color: #fff;
+}
+
+.salary-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.salary-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Add Animations */
+
+
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hero Section Text Fade-in */
+.hero h1, .hero h2, .hero p {
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Button Bounce on Hover */
+.hero button:hover {
+    background-color: #660000;
+    transform: scale(1.05);
+    animation: bounce 0.3s ease-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+/* Section Entrance Animation */
+.section {
+    opacity: 0.4;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0.3;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card Hover Glow Effect */
+.career-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 223, 0, 0.5);
+}
+
+/* Section Text Animation */
+.section h2, .section p {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Fade-in Keyframes (Reused) */
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hero Text Slide-in from Bottom */
+.hero h1, .hero h2, .hero p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInBottom 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes slideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section Slide-in from Side */
+.section {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideInLeft 1s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Career Cards Staggered Slide-in */
+.career-card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideInStagger 1s ease-out forwards;
+}
+
+.career-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.career-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.career-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes slideInStagger {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Achievements Section - Slide-in from Right */
+#achievements .achievements-content {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: slideInRight 1s ease-out forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
