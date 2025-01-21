@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('dfccil2.jpg'); /* Blue background */
+    background-image: url('images/dfccil2.jpg'); /* Blue background */
     background-size: cover; /* Ensures the image covers the entire screen */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -41,7 +41,7 @@ body {
     max-width: 800px;
     width: 100%;
     padding: 30px;
-    background-image: url('bg1.jpg'); /* Maroon background for the form */
+    background-image: url('images/bg1.jpg'); /* Maroon background for the form */
     background-repeat: no-repeat;
     background-size: cover; 
     border-radius: 12px; /* Slightly rounded corners */
