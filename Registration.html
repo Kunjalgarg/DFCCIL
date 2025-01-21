@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="dfccil.jpg">
+</head>
+<body>
+    <div class="text">
+    <h1>
+        We are excited <br>to hire you!! <br>
+        Enter your valid details <br>and walk in interview.
+    </h1>
+    </div>
+    <div class="container">
+        <h1>Employee Registration</h1>
+        <form action="submit.html" method="GET">
+            <div class="name-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First" required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last" required>
+            </div>
+
+            <label>Gender</label>
+            <div class="radio-group">
+                <label for="genderMale">Male</label>
+                <input type="radio" id="genderMale" name="gender" value="male">
+
+                <label for="genderFemale">Female</label>
+                <input type="radio" id="genderFemale" name="gender" value="female">
+
+                <label for="genderOther">Other</label>
+                <input type="radio" id="genderOther" name="gender" value="other">
+            </div>
+
+            <label for="birthDate">Birth Date</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="birthmark">Birthmark</label>
+            <input type="text" id="birthmark" name="birthmark" required>
+
+            <label>Medical Conditions</label>
+            <div class="radio-group">
+                <label for="medicalGood">Good</label>
+                <input type="radio" id="medicalGood" name="medicalConditions" value="good">
+
+                <label for="medicalBad">Bad</label>
+                <input type="radio" id="medicalBad" name="medicalConditions" value="bad">
+
+                <label for="medicalOther">Other</label>
+                <input type="radio" id="medicalOther" name="medicalConditions" value="other">
+            </div>
+
+            <label>Marital Status</label>
+            <div class="radio-group">
+                <label for="maritalSingle">Single</label>
+                <input type="radio" id="maritalSingle" name="maritalStatus" value="single">
+
+                <label for="maritalMarried">Married</label>
+                <input type="radio" id="maritalMarried" name="maritalStatus" value="married">
+
+                <label for="maritalOther">Other</label>
+                <input type="radio" id="maritalOther" name="maritalStatus" value="other">
+            </div>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" value="1234567890" required>
+
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" value="abc@gmail.com" required>
+
+            <label for="extraSkills">Extra Skills</label>
+            <input type="text" id="extraSkills" name="extraSkills" value="Writing or Reading" required>
+
+            <label for="nationality">Nationality</label>
+            <input type="text" id="nationality" name="nationality" value="Indian" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="houseAddress">House Address</label>
+            <textarea id="houseAddress" name="houseAddress" rows="3" required></textarea>
+
+            <label for="salary">Salary Expectations</label>
+            <input type="number" id="salary" name="salary" required>
+
+            <label for="department">Work Department</label>
+            <select id="department" name="department">
+                <option value="HR">HR</option>
+                <option value="Finance">Finance</option>
+                <option value="SAP">SAP</option>
+                <option value="Marketing">Marketing</option>
+                <option value="R&D">Research and Development</option>
+                <option value="Software Development">Software Development</option>
+                <option value="Production">Production</option>
+            </select>
+
+            <label for="currentPlace">Current Working Place</label>
+            <input type="text" id="currentPlace" name="currentPlace" required>
+
+            <label for="position">Position</label>
+            <select id="position" name="position">
+                <option value="HR Manager">HR Manager</option>
+                <option value="CEO">CEO</option>
+                <option value="Administrative Assistant">Administrative Assistant</option>
+                <option value="Project Manager">Project Manager</option>
+                <option value="Analyst">Analyst</option>
+                <option value="Sales">Sales</option>
+                <option value="Customer Service Representative">Customer Service Representative</option>
+                <option value="Product Manager">Product Manager</option>
+                <option value="Accountant">Accountant</option>
+                <option value="Finance">Finance</option>
+                <option value="Mail Clerk">Mail Clerk</option>
+                <option value="Marketing Manager">Marketing Manager</option>
+                <option value="Administrator">Administrator</option>
+                <option value="Developer">Developer</option>
+            </select>
+
+            <label for="joiningDate">Joining Date</label>
+            <input type="date" id="joiningDate" name="joiningDate" required>
+
+            <button type="submit" onclick="window.open('submit.html', '_blank');">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
