@@ -30,18 +30,18 @@ body {
     font-size: 20px;
     margin-left: 10px;
     margin-right: 40px;
-    color: #0d0530; /* Example: Red color for the text */
+    color: #000000; /* Example: Red color for the text */
     text-shadow: 
-        0 0 5px #30c4df62,    /* Inner glow */
-        0 0 10px #30c4df62,   /* Medium glow */
-        0 0 20px #30c4df62;   /* Outer glow */
+        0 0 5px #f8fbfce7,    /* Inner glow */
+        0 0 10px #185c68,   /* Medium glow */
+        0 0 20px #110b46;   /* Outer glow */
 }
 
 .container {
     max-width: 800px;
     width: 100%;
     padding: 30px;
-    background-image: url('images/bg1.jpg'); /* Maroon background for the form */
+    background-image: url('images/bg3.jpg'); /* Maroon background for the form */
     background-repeat: no-repeat;
     background-size: cover; 
     border-radius: 12px; /* Slightly rounded corners */
