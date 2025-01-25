@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(105, 4, 4);
+    /* Blue background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container p {
+    text-align: justify;
+    font-family: 'cursive', serif;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    background-color: #001e36;
+    /* Maroon background for the form */
+    border-radius: 12px;
+    /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #f5f5f5;
+    /* Off-white text color */
+    border: 2px solid #a82c2c;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s ease-out forwards;
+    /* Fade-in effect */
+    max-height: 80vh;
+    /* Ensure the container doesn't exceed 80% of the viewport height */
+    overflow-y: auto;
+    /* Enable vertical scrolling if content overflows */
+}
+
+.container h1 {
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    background-color: #001e36;
+    /* Maroon background for the form */
+    border-radius: 12px;
+    /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #f5f5f5;
+    /* Off-white text color */
+    border: 2px solid #a82c2c;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s ease-out forwards;
+    /* Fade-in effect */
+    max-height: 80vh;
+    /* Ensure the container doesn't exceed 80% of the viewport height */
+    overflow-y: auto;
+    /* Enable vertical scrolling if content overflows */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #f5f5f5;
+    /* Off-white text color */
+    margin-bottom: 25px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeInText 1s ease-out 0.5s forwards;
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #f5f5f5;
+    /* Off-white text color */
+}
+
+span {
+    color: #001e36;
+    /* Blue color for the details */
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    /* Off-white background */
+    color: #001e36;
+    /* Blue text color */
+    border: 2px solid #001e36;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #00192e;
+    /* Blue background on hover */
+    color: #f5f5f5;
+    /* Off-white text color on hover */
+    border-color: #f5f5f5;
+    /* Off-white border color on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge the link */
+}
+
+/* Style for the button */
+.button {
+    position: fixed;
+    /* Fixed position to stay in place even when scrolling */
+    bottom: 20px;
+    /* Distance from the bottom */
+    right: 20px;
+    /* Distance from the right */
+}
+
+.button button {
+    background-color: #001e36;
+    /* Blue color */
+    color: white;
+    /* White text */
+    border: 2px solid white;
+    /* White border */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    /* Padding for better appearance */
+    font-size: 1rem;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+/* Hover effect */
+.button button:hover {
+    background-color: #001e36a4;
+    /* Darker blue on hover */
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

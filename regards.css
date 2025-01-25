@@ -1,0 +1,122 @@
+/* regards.css */
+
+/* Animated gradient background */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #800020, #041627, #e6e6e6);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Smooth gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent card */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #444;
+    animation: fadeIn 2s ease-out;
+    background: url('me3.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    color: #fff; /* Ensures text is readable on the image */
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent overlay */
+    backdrop-filter: blur(2px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    z-index: 0; /* Places it behind the content */
+    border-radius: 12px; /* Matches the card's border radius */
+}
+
+/* Ensuring text stays above the background */
+.card > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Smooth fade-in animation for the card */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.p2{
+    color: #011106e1;
+}
+.p2 b {
+    display: block;
+    font-size: 1.3rem;
+    color: #470818; /* Maroon */
+    margin-bottom: 10px;
+}
+
+.p2 i {
+    font-style: italic;
+    font-size: 1rem;
+    color: #051627; /* Denim */
+    font-size: 16px;
+}
+
+.p2::before {
+    content: '"';
+    font-size: 2rem;
+    color: #051627;
+    vertical-align: top;
+}
+
+/*.p2::after {
+    content: '"';
+    font-size: 2rem;
+    color: #4b6d90;
+    vertical-align: bottom;
+}*/
