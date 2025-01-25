@@ -41,7 +41,7 @@ body {
     font-size: 1.1rem;
     color: #444;
     animation: fadeIn 2s ease-out;
-    background: url('me3.jpg') no-repeat center center;
+    background: url('images/me3.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
     overflow: hidden;
